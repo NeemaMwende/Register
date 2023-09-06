@@ -19,7 +19,7 @@ car.printDescription();
 
 // car.getPrice();
 console.log(car.year) */
-
+/* 
  function first()
  {
     return this;
@@ -33,4 +33,26 @@ console.log(car.year) */
  }
  console.log(second() === global);
 //  console.log(second() === local);
- console.log(second() === undefined);
+ console.log(second() === undefined); */
+
+
+ let myObject = { value: 'My Object' };
+
+ //value is set on the global object
+ global.value = 'Global object';
+
+ function third() 
+ {
+    return this.value;
+ }
+
+ console.log(third());
+
+
+
+
+
+
+
+
+
