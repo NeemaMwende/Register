@@ -19,10 +19,15 @@ console.log(others);
  */
 
 let year,model;
-let car = 
+// wrap the entire thing 
+({year,model} = 
 {
     make: 'bmw',
     model: '745il',
     year: '2010',
     value: '5000'
-}
+});
+console.log(year);
+console.log(model);
+
+
