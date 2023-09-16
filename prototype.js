@@ -27,7 +27,7 @@ console.log(Object.getPrototypeOf(newCar));
 console.log(originalCar.hasOwnProperty('doors'));
 console.log(newCar.hasOwnProperty('doors'));
 console.log(newCar.hasOwnProperty('make'));
-
+console.log(Object.getPrototypeOf(newCar));
 // newCar.cc = 1800;
 // newCar.color = 'blue';
 // // console.log(Object.getPrototypeOf(originalCar));
@@ -44,9 +44,16 @@ for (let key in originalCar) {
 // newCar.color = 'Blue';
 // newCar.cc = 1800;
 
-// for (let key in newCar) {
-//     console.log(key + ": " + newCar[key]);
-// }
+
+//display vaalues in new car
+for (let key in newCar) {
+    console.log(key + ": " + newCar[key]);
+}
  
+for (let key in newCar) {
+    if (newCar.hasOwnProperty(key)) {
+        console.log(key + ": " + newCar[key]);
+    }
+}
 
 
