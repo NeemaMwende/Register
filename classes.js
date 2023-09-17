@@ -1,5 +1,5 @@
 //declaration
-class car 
+class Car
 {
     constructor(make, model, year)
     {
@@ -7,14 +7,15 @@ class car
         this.model = model;
         this.year = year;
     }
-
     print()
     {
-        console.log(`Make: ${this.make} Model:${this.model}, Year:${this.year}`);
+        console.log('${this.make} ${this.model} ${this.year}');
+        // console.log(`Make: ${this.make} Model:${this.model}, Year:${this.year}`);
     }
 }
 let myCar = new Car ('bmw', '42232', 2102);
 myCar.print();
 
 
-//expression
+//expressionclear
+// let car = class {};
