@@ -9,7 +9,7 @@
  }
  beforeTryCatch(); */
 
- function afterTryCatch()
+ /* function afterTryCatch()
  {
     try
     {
@@ -28,3 +28,31 @@
     console.log('My program is still running');
  }
  afterTryCatch();
+ */
+
+ function performCalculation(obj)
+ {
+   if(!obj.hasOwnProperty('b'))
+   {
+      throw new Error("The object doesn't have property b");
+   }
+   // otherwise continue with calculation
+   return 6;
+ }
+// performCalculation();
+
+function performHigherLevelOperation()
+{
+   let obj = {};
+   let value = 0;
+   try
+   {
+      value= performCalculation(obj);
+   }
+   catch (error)
+   {
+      console.log(error.message);
+   }
+
+   if (value == 0) {}
+}
