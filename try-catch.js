@@ -21,6 +21,10 @@
     {
         console.log('i caught an exception:' + error.message);
     }
+    finally
+    {
+      console.log('this will print regardless of what happens');
+    }
     console.log('My program is still running');
  }
  afterTryCatch();
