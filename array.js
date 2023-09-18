@@ -19,11 +19,19 @@ console.log(fibonacci.join(' ~ '));
 
 // takes an item from the front side of an array... like a pop method 
 // but from the front not the back...unshift-add items to the front
-console.log(lost.shift());
+/* console.log(lost.shift());
 console.log(lost);
 
 lost.unshift(2,5,7,8);
-console.log(lost)
+console.log(lost); */
+
+//reverse the order of things
+console.log(names);
+console.log(names.reverse()); 
+console.log(names.sort());
+
+
+
 
 
 
