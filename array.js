@@ -26,10 +26,12 @@ lost.unshift(2,5,7,8);
 console.log(lost); */
 
 //reverse the order of things
-console.log(names);
+/* console.log(names);
 console.log(names.reverse()); 
-console.log(names.sort());
+console.log(names.sort()); */
 
+//find out where the element is
+console.log(others.indexOf('mark'));
 
 
 
