@@ -36,13 +36,14 @@ console.log(names.sort()); */
 console.log(combine);
 console.log(combine.lastIndexOf(8)); */
 
-// var filtered = combine.filter((x) => {if (x <=15) return x; } );
-// console.log(filtered);
+var filtered = combine.filter((x) => {if (x <=15) return x; } );
+console.log(filtered);
 
-names.forEach((names) => console.log(`howdy $(name)`) );
+// names.forEach((names) => console.log(`howdy $(name)`) );
+console.log(filtered.every((num) => num < 10 ));
 
-
-
+console.log(fibonacci.some((num) => num > 50));
+console.log(fibonacci.some((num) => num > 100));
 
 
 
