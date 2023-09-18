@@ -8,8 +8,8 @@ let fibonacci = [1,1,2,3,5,8,13,21,34,55];
 var combine = lost.concat(fibonacci);
 console.log(combine);
 
-var combine = names.concat(others);
-console.log(combine);
+// var combine = names.concat(others);
+// console.log(combine); 
 
 /* names.pop()
 names.push('Neema', 'Paul');
@@ -31,13 +31,15 @@ console.log(names.reverse());
 console.log(names.sort()); */
 
 //find out where the element is
-console.log(others.indexOf('mark'));
+/* console.log(others.indexOf('mark'));
 
 console.log(combine);
-console.log(combine.lastIndexOf(8));
+console.log(combine.lastIndexOf(8)); */
 
+// var filtered = combine.filter((x) => {if (x <=15) return x; } );
+// console.log(filtered);
 
-
+names.forEach((names) => console.log(`howdy $(name)`) );
 
 
 
