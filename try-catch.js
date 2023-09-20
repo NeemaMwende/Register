@@ -54,5 +54,22 @@ function performHigherLevelOperation()
       console.log(error.message);
    }
 
-   if (value == 0) {}
+   if (value == 0) 
+   {
+       // contigency
+       // retry logic
+   }
 }
+performHigherLevelOperation();
+
+
+
+
+
+
+
+
+
+
+
+
