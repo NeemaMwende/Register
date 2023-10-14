@@ -16,3 +16,7 @@ let name = 'Neema';
 let bodyTemp = 37;
 const PI = 3.14;
 console.log(age, name, bodyTemp, PI);
+
+let lightOn = 'true';
+let lightOff = 'false';
+console.log(lightOff == lightOn);
