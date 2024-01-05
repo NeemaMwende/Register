@@ -1,4 +1,4 @@
-/* let a,b,c,d,e;
+let a,b,c,d,e;
 
 let names = ['car', 'boy', 'march', 'house', 'guest'];
 [a,b,c,d,e] = names;
@@ -16,7 +16,6 @@ console.log(b);
 console.log(others);
 
 
- */
 
 let year,model;
 // wrap the entire thing 
@@ -33,7 +32,7 @@ console.log(model);
 let firstName = 'Neema';
 let lastName = 'Mwende';
 let city = 'Nairobi';
-let phoneNumber = 0381981983;
+let phoneNumber = 0721212121;
 let email = 'neemawende@gmail.com';
 
 let details = firstName + ' ' + lastName + ' ' + city + ' ' + phoneNumber + ' ' + email;

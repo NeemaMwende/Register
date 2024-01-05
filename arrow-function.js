@@ -23,14 +23,17 @@ hi();  */
 let names = ['david', 'eddie', 'alex', 'michael'];
 names.map((name) => {console.log(`howdy ${names}!` ) } );
 
+// let kids = ['anne', 'carol', 'mike'];
+// kids.map( (kids) => {console.log(`Hey` ${kids})}  );
+
 //prints out howdy david 1!,howdy eddie2!,howdy alex3!,howdy michael4!
-let names = ['david', 'eddie', 'alex', 'michael'];
+let namess = ['david', 'eddie', 'alex', 'michael'];
 let i = 0;
-names.map((name) => {i++; console.log(`howdy ${names} ${i}!` ) } );
+names.map((name) => {i++; console.log(`howdy ${namess} ${i}!` ) } );
 
 //prints out the names in an array enclosement with the backslashes on each name
-let names = ['david', 'eddie', 'alex', 'michael'];
-var transform = names.map((name) => {return `howdy ${name}!` });
+let namees = ['david', 'eddie', 'alex', 'michael'];
+var transform = namees.map((name) => {return `howdy ${name}!` });
 console.log(transform);
 
 
