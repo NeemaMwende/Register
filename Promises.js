@@ -119,13 +119,13 @@ myArray.forEach(value => console.log(value + 5));
 
 
 //promises are also used in the fetch api for network requests
-fetch('<Your API URL>')
-  .then(response => console.log(response))
-  .catch(error => console.log(error));
+// fetch('<Your API URL>')
+//   .then(response => console.log(response))
+//   .catch(error => console.log(error));
 
   //calling the fetch API
-  const response = fetch('<Your API URL>');
-console.log(response); // Promise {<pending>}
+//   const response = fetch('<Your API URL>');
+// console.log(response); // Promise {<pending>}
 //The fulfilled Promise from the Fetch API call
 // Promise {<fulfilled>: Response}
 
@@ -150,6 +150,29 @@ p1.then(message1 => {
 const p5 = Promise.resolve(200);
 const p6 = Promise.resolve('Finished');
 
-Promise.all([p4, p5, p6])
+Promise.all([ p4, p5, p6])
   .then(messages => console.log(messages))
   .catch(error => console.log(error));
+
+  //The Promise.allSettled() method
+  //The Promise.allSettled() method is similar to the Promise.all() method,
+  // but instead of  proceeding to catch() when one of the promises got rejected, 
+  // the method will store the reject result and continue processing other promises.
+  const p7 = Promise.reject('Error From Promise One');
+const p8 = Promise.resolve(200);
+const p9 = Promise.resolve('Finished');
+
+Promise.allSettled([p7, p8, p9]).then(response => {
+  console.log(response);
+});
+
+//The Promise.any() method
+//The Promise.any() method is similar to the Promise.all() method, 
+//except that it returns only a single value from any promise that calls the resolve() function first.
+const p10 = Promise.reject('Error From Promise One');
+const p11 = Promise.resolve(200);
+const p12 = Promise.resolve('Finished');
+
+Promise.any([p10, p11, p12]).then(response => {
+  console.log(response);
+});
