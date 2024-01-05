@@ -176,3 +176,14 @@ const p12 = Promise.resolve('Finished');
 Promise.any([p10, p11, p12]).then(response => {
   console.log(response);
 });
+
+//The Promise.race() method
+//The Promise.race() method is like the Promise.any() method, 
+//with one difference: the promise is settled when any promise is resolved or rejected:
+const p13 = Promise.reject('Error From Promise One');
+const p14 = Promise.resolve(200);
+const p15 = Promise.resolve('Finished');
+
+Promise.race([p13, p14, p15])
+  .then(response => console.log(response))
+  .catch(reason => console.log(reason));
