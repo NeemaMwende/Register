@@ -111,3 +111,45 @@ processMessage()
       console.log("All steps completed.");
     });
   
+// different code which doesnt need promises
+// in areas where you dont have to wait setTimeout use callbacks
+const myArray = [1, 2, 3, 4];
+myArray.forEach(value => console.log(value + 5));
+// the code above adds 5 to each value and outputs in the console
+
+
+//promises are also used in the fetch api for network requests
+fetch('<Your API URL>')
+  .then(response => console.log(response))
+  .catch(error => console.log(error));
+
+  //calling the fetch API
+  const response = fetch('<Your API URL>');
+console.log(response); // Promise {<pending>}
+//The fulfilled Promise from the Fetch API call
+// Promise {<fulfilled>: Response}
+
+
+//incase of multiple promises  = nested callbacks
+const p1 = Promise.resolve('Success');
+const p2 = Promise.resolve(200);
+const p3 = Promise.resolve('Finished');
+
+p1.then(message1 => {
+    return p2.then(message2 => {
+      return p3.then(message3 => {
+        return [message1, message2, message3];
+      });
+    });
+  }).then(messages => {
+    console.log(messages);
+  });
+
+  //= promise.all() method = better than nested callbacks
+  const p4 = Promise.reject('Error From Promise One');
+const p5 = Promise.resolve(200);
+const p6 = Promise.resolve('Finished');
+
+Promise.all([p4, p5, p6])
+  .then(messages => console.log(messages))
+  .catch(error => console.log(error));
