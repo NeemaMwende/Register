@@ -34,3 +34,7 @@ async function runProcess() {
   }
   
   runProcess();
+
+  //How to Use Async/Await in IIFE and Arrow Functions
+//An Immediately Invoked Function Expression (IIFE) is a technique used to execute a function immediately as soon as you define it.
+//IIFE Asynchronous Function Example
